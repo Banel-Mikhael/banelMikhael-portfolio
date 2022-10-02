@@ -1,0 +1,21 @@
+.anime{ 
+    overflow: hidden;
+    animation: 
+    typing 3.5s steps(40, end);
+}
+
+.typing1{
+    overflow: hidden;
+    animation: 
+    write 3.5s steps(40, end) both;
+}
+@keyframes typing {
+    from { color: white; }
+    to {color: black; }
+  }
+
+  @keyframes write {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
