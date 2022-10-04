@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>  
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="min-h-screen">
     
   <nav class="sticky top-0 ">
-    <div class="flex justify-between bg-white h-20 pt-5 font-mono ml-10 border-b-10 border-b-2 border-black">
+    <div class="flex justify-between bg-white h-20 pt-5 font-mono ml-10 mr-10 border-b-10 border-b-2 border-black">
      <div ><h1 class="text-5xl ">Banel<span style="color: red;">.</span></h1>
      </div>
      <div>
     <ul class="flex justify-evenly gap-x-8 pt-2 text-xl ">
-     <li class="hover:text-zinc-500 "><a href="">Home</a></li>
-     <li class=" hover:text-zinc-500"><a href="">About</a></li>
-     <li class="hover:text-zinc-500 "><a href="">Projects</a></li>
-     <li class="hover:text-zinc-500 "><a href="">Contact</a></li>
+     <li class="hover:text-zinc-500 beat"><a href="">Home</a></li>
+     <li class=" hover:text-zinc-500 beat"><a href="">About</a></li>
+     <li class="hover:text-zinc-500 beat"><a href="">Projects</a></li>
+     <li class="hover:text-zinc-500 beat"><a href="">Contact</a></li>
     </ul>
 </div>
 <div>
-   <a href="https://github.com/" target="_blank" class="hover:text-slate-600 "> <svg  xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+   <a href="https://github.com/Banel-Mikhael" target="_blank" class="hover:text-slate-400 "> <svg  xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
       </svg>
     </a>
@@ -30,7 +30,7 @@
 </nav>
 <main >
     <div class="grid grid-cols-2 grid-rows-3 ">
-        <div class="font-mono w-full row-start-1 row-end-3 pl-9 ">
+        <div class="font-mono w-full row-start-1 row-end-3 lg:col-start-1 lg:col-end-2 md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full pl-9 ">
             <div>
             <h1 class="flex gap-2 text-5xl pt-24 pl-10 anime">
                 <span >Hi!IAM</span>
@@ -41,7 +41,7 @@
 
             <h1 class="pl-10 text-5xl anime">Banel Mikhael</h1>
             <br>
-            <p  class="pl-10 anime">Video editing And IT technician for over 3 YEARS</p>
+            <p  class="pl-10 anime">A Video editor And IT technician for over 2 YEARS</p>
             <p  class="pl-10 anime">+Front-End Developer</p>
            <br>
             <div class="pl-10 flex gap-2 ">
@@ -49,35 +49,59 @@
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                   </svg></button></a> 
-                <button class="bg-lime-300 h-12 w-32 rounded hover:bg-lime-500">Projects</button>
+                <button class="bg-lime-300 h-12 w-32 rounded hover:bg-lime-500 flex justify-evenly text-center"><span class="pt-3"> Projects </span> <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                  <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                </svg></button>
             </div>
             <div>     
                 
-              <div class="grid gap-3 grid-cols-2 grid-rows-2"> 
-                 <h2 class="pl-10 text-4xl mt-10">Let's Chat</h2>
+              <div class="flex  flex-col justify-evenly gap-y-4"> 
+                 <h2 class="pl-10 text-4xl mt-10 typing2">Let's Chat</h2>
                 <img src="" alt="">
-                  <h3 class="text-2xl ml-10 hover:text-cyan-400 typing1"><a href="mailto:banel.mikhael.bm@gmail.com">Banel.Mikhael.bm@gmail.com</a> </h3>
+                  <h3 class="text-2xl ml-10  hover:text-cyan-400 typing1"><a href="mailto:banel.mikhael.bm@gmail.com">Banel.Mikhael.bm@gmail.com</a> </h3>
                  <img class="" src="" alt="">
                  </div>  
         </div> 
     </div>
 
 </div>
-<div class="w-full  row-span-3">
-<div class=" h-full w-full bg-no-repeat bg-center bg-[url('./523-5237005_developing-full-stack-developer-png-transparent-png-removebg-preview.png')]">
+<div class="w-full  lg:row-span-3 lg-row-span-3 ">
+<div class=" h-full w-full bg-no-repeat bg-center lg:bg-[url('./523-5237005_developing-full-stack-developer-png-transparent-png-removebg-preview.png')] grid grid-rows-2">
+<div>
 
+</div>
+<div>
+  
+</div>
 </div>
 <div class="">   
 </div>
 
 </div>
 
-<div class="w-full bg-black  row-start-3 row-end-4 grid grid-cols-2">
- <div class="bg-black">
-
+<div class=" w-full w-full  bg-gradient-to-l from-gray-900 to-gray-600 bg-gradient-to-r lg:col-start-1 lg:col-end-2 row-start-3 row-end-4 grid grid-cols-2 
+md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
+ <div class=" font-mono">
+<h1 class="text-white text-center pt-5 text-2xl text-blue-400">Skills</h1>
+<hr class="text-white mx-8 pt-1">
+ <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-8 md:gap-x-10">
+  <li class="text-2xl text-orange-500"><ion-icon name="logo-html5"></ion-icon></li>
+  <li class="text-2xl text-blue-600"><ion-icon name="logo-css3"></ion-icon></li>
+  <li class="text-2xl text-yellow-500"><ion-icon name="logo-javascript"></ion-icon></li>
+ </ul>
+ <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-8  md:gap-x-10">
+  <li class="text-indigo-600 pr-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+  </svg></ion-icon></li>
+  <li class="text-2xl"></ion-icon></li>
+  <li class="text-2xl"><ion-icon name="logo-javascript"></ion-icon></li>
+ </ul>
  </div>
- <div class=" text-white flex justify-evenly flex-col pl-10 pr-10">
+ <div class=" text-white flex justify-evenly flex-col px-10">
    <ul class="flex flex-col gap-y-8  ">
+    
     <a href="https://www.linkedin.com/in/banel-mikhael-a535101b7/" target="_blank"> <li class="border-b-10 border-b-2 border-white flex justify-between">LinkedIn <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
       <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
     </svg></li></a>
@@ -95,6 +119,7 @@
 </main>
 
 
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
