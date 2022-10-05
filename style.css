@@ -7,7 +7,7 @@
 .typing1{
     overflow: hidden;
     animation: 
-    write1 3.5s steps(40, end) both;
+    write1 6s steps(60, end) both;
 }
 .beat:hover{
   animation: 

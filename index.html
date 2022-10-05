@@ -4,33 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>  
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="min-h-screen">
-    
-  <nav class="sticky top-0 ">
-    <div class="flex justify-between bg-white h-20 pt-5 font-mono ml-10 mr-10 border-b-10 border-b-2 border-black">
-     <div ><h1 class="text-5xl ">Banel<span style="color: red;">.</span></h1>
-     </div>
-     <div>
-    <ul class="flex justify-evenly gap-x-8 pt-2 text-xl ">
-     <li class="hover:text-zinc-500 beat"><a href="">Home</a></li>
-     <li class=" hover:text-zinc-500 beat"><a href="">About</a></li>
-     <li class="hover:text-zinc-500 beat"><a href="">Projects</a></li>
-     <li class="hover:text-zinc-500 beat"><a href="">Contact</a></li>
+<nav class="bg-white px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <h1 class="text-5xl ">Banel<span style="color: red;">.</span></h1>
+  </a>
+  <div class="flex md:order-2">
+     
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <a href="https://github.com/Banel-Mikhael" target="_blank" class="hover:text-slate-400 "> <svg class="object-center"  xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </svg>
+  </a>
+  </div>
+  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Projects</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Contact</a>
+      </li>
     </ul>
-</div>
-<div>
-   <a href="https://github.com/Banel-Mikhael" target="_blank" class="hover:text-slate-400 "> <svg  xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-      </svg>
-    </a>
-</div>
-</div>
+  </div>
+  </div>
 </nav>
 <main >
     <div class="grid grid-cols-2 grid-rows-3 ">
-        <div class="font-mono w-full row-start-1 row-end-3 lg:col-start-1 lg:col-end-2 md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full pl-9 ">
+        <div class="font-mono w-full row-start-1 row-end-3 col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full pl-9 ">
             <div>
             <h1 class="flex gap-2 text-5xl pt-24 pl-10 anime">
                 <span >Hi!IAM</span>
@@ -56,7 +69,7 @@
             </div>
             <div>     
                 
-              <div class="flex  flex-col justify-evenly gap-y-4"> 
+              <div class="flex  flex-col justify-evenly gap-y-3"> 
                  <h2 class="pl-10 text-4xl mt-10 typing2">Let's Chat</h2>
                 <img src="" alt="">
                   <h3 class="text-2xl ml-10  hover:text-cyan-400 typing1"><a href="mailto:banel.mikhael.bm@gmail.com">Banel.Mikhael.bm@gmail.com</a> </h3>
@@ -66,8 +79,8 @@
     </div>
 
 </div>
-<div class="w-full  lg:row-span-3 lg-row-span-3 ">
-<div class=" h-full w-full bg-no-repeat bg-center lg:bg-[url('./523-5237005_developing-full-stack-developer-png-transparent-png-removebg-preview.png')] grid grid-rows-2">
+<div class="lg:w-full  lg:row-span-3 lg-row-span-3 ">
+<div class=" h-full w-full bg-no-repeat bg-center lg:bg-[url('./images/523-5237005_developing-full-stack-developer-png-transparent-png-removebg-preview.png')] grid grid-rows-2">
 <div>
 
 </div>
@@ -80,23 +93,25 @@
 
 </div>
 
-<div class=" w-full w-full  bg-gradient-to-l from-gray-900 to-gray-600 bg-gradient-to-r lg:col-start-1 lg:col-end-2 row-start-3 row-end-4 grid grid-cols-2 
+<div class="w-full col-start-1 col-end-3 w-full  bg-gradient-to-l from-gray-900 to-gray-600 bg-gradient-to-r lg:col-start-1 lg:col-end-2 row-start-3 row-end-4 grid grid-cols-2 
 md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
  <div class=" font-mono">
 <h1 class="text-white text-center pt-5 text-2xl text-blue-400">Skills</h1>
 <hr class="text-white mx-8 pt-1">
- <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-8 md:gap-x-10">
-  <li class="text-2xl text-orange-500"><ion-icon name="logo-html5"></ion-icon></li>
-  <li class="text-2xl text-blue-600"><ion-icon name="logo-css3"></ion-icon></li>
-  <li class="text-2xl text-yellow-500"><ion-icon name="logo-javascript"></ion-icon></li>
+ <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-4 md:gap-x-10">
+  <li class="scale-75"><img src="./images/w3_html5-icon.svg" alt=""></li>
+  <li class="scale-75"><img src="./images/w3_css-icon.svg" alt=""></li>
+  <li class="scale-75"><img src="./images/javascript-icon.svg" alt=""></li>
  </ul>
  <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-8  md:gap-x-10">
-  <li class="text-indigo-600 pr-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
-    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
-    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
-  </svg></ion-icon></li>
-  <li class="text-2xl"></ion-icon></li>
-  <li class="text-2xl"><ion-icon name="logo-javascript"></ion-icon></li>
+  <li class="scale-100 pl-2"><img src="./images/getbootstrap-icon.svg" alt=""></li>
+  <li class="scale-150 pl-6"><img class="" src="./images/tailwindcss-ar21.svg" alt="TAILWINDCSS"></li>
+  <li class="scale-75"><img src="./images/visualstudio_code-icon.svg" alt=""></li>
+ </ul>
+ <ul class="text-white pl-10 flex justify-evenly lg:gap-x-24  pr-10 pt-8  md:gap-x-10">
+  <li class="scale-75"><img src="./images/reactjs-icon.svg" alt=""></li>
+  <li class="scale-75"><img src="./images/adobe_illustrator-icon.svg" alt=""></li>
+  <li class="scale-75"><img src="./images/sqlite-icon.svg" alt=""></li>
  </ul>
  </div>
  <div class=" text-white flex justify-evenly flex-col px-10">
@@ -118,7 +133,7 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
 
 </main>
 
-
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
