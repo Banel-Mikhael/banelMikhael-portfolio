@@ -7,7 +7,7 @@
 .typing1{
     overflow: hidden;
     animation: 
-    write1 6s steps(60, end)   infinite;
+    write1 6s steps(60, end)  both;
 }
 .beat:hover{
   animation: 
@@ -20,8 +20,7 @@
 
   @keyframes write1 {
     0%{ width: 0%}
-    50% { width: 100% }
-    100%{ width: 0%}
+    100%{ width:100%}
   }
   @keyframes  beat1{
     0% {
