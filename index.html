@@ -26,23 +26,23 @@
   <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
     <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
       <li>
-        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat" aria-current="page">Home</a>
+        <a href="#home" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat" aria-current="page">Home</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">About</a>
+        <a href="#about" target="" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat ">About</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Projects</a>
+        <a href="#projects" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Projects</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Contact</a>
+        <a href="#contact" class="block py-2 pr-4 pl-3 text-black bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white beat">Contact</a>
       </li>
     </ul>
   </div>
   </div>
 </nav>
 <!-- home page -->
-<main >
+<main id="home" >
     <div class="grid grid-cols-2 grid-rows-3 ">
         <div class="font-mono w-full row-start-1 row-end-3 col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full pl-9 ">
             <div class="">
@@ -112,8 +112,8 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
 </main>
 <!-- end of home page -->
 <!-- about page -->
-
-<div class="container bg-gradient-to-l from-gray-700 via-gray-900 to-black mx-auto w-full h-full">
+<section id="about">
+<div  class="container bg-gradient-to-l from-gray-700 via-gray-900 to-black mx-auto w-full h-full">
   <div class="relative wrap overflow-hidden p-10 h-full">
     <h1 class="text-white text-center text-4xl pb-10"> About Me</h1>
     <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
@@ -166,11 +166,13 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
     </div>
   </div>
 </div>
+</section>
 <!-- End of about page -->
 
 <!-- Project Page -->
 <!-- Container for demo purpose -->
-<div class="container my-24 px-6 mx-auto">
+<section id="projects">
+<div  class="container my-24 px-6 mx-auto">
 
   
   <section class="mb-32 text-gray-800">
@@ -189,7 +191,7 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
         style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
         <img src="./images/Flamingo.png"
           class="w-full transition duration-300 ease-linear align-middle" />
-        <a href="#!">
+        <a href="https://github.com/Banel-Mikhael/flamingo-rest">
           <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
             style="background-color: rgba(0, 0, 0, 0.3)">
             <div class="flex justify-start items-end h-full">
@@ -246,8 +248,10 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
     </div>
   </section>
 </div>
+</section>
 <!-- End of Project page -->
 <!-- Contact page -->
+<section id="contact">
 <div class="flex  items-center justify-start bg-white">
   <div class="mx-auto w-full max-w-lg">
     <h1 class="text-4xl font-medium">Contact Me</h1>
@@ -272,6 +276,7 @@ md:col-start-1 md:col-end-3 sm:col-start-1 sm:col-end-3 md:w-full sm=w-full">
     </form>
   </div>
 </div>
+</section>
 <!-- End of Contact page -->
 <!-- footer page  -->
 <footer class="text-center bg-gray-900 text-white">
